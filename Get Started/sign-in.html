@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes changeHue {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+        .container {
+            position: relative;
+            height: 100%;
+            background: url(../assest/Black\ Brown\ Geometric\ Motivational\ Desktop\ Wallpaper.png);
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            background-blend-mode: multiply; /* This blends the background image with the black color */
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            animation: changeHue 20s infinite alternate linear; /* Adjust duration and timing function as needed */
+        }
+
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            z-index: -1;
+        }
+
+        .form-container {
+            background-color: transparent;
+            backdrop-filter: blur(2px);
+            padding: 30px;
+            border: 2px solid #ffffff63;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 400;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding and border don't affect width */
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    </style><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="bg"></div>
+        <div class="form-container">
+            <a href="../index.html"> <i title="Go Home" class='bx bx-home-alt' ></i></a>
+
+            <h2>Sign In</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Enter your username" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" name="password" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Don't have an account yet? <a href="login.html">Sign up</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>

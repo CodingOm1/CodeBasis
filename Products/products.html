@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Code Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(../assest/Online-courses.jpg);
+            background-color: rgba(0, 0, 0, 0.26); /* Black with 50% opacity */
+            background-blend-mode: multiply; /* This blends the background image with the black color */
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .product h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .show-all-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .show-all-btn:hover {
+            background-color: #0056b3;
+        }
+        a{
+            text-decoration: none;
+        }
+        i {
+            font-size: 1.5rem;
+        }
+    </style>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="container">
+   <a href="../index.html"> <i title="Go Home" class='bx bx-home-alt' ></i></a>
+    <h1>Our Products</h1>
+    
+    <div class="product"><a href="#">
+        <img src="../assest/product1.jpg" alt="Product 1">
+        <h2>Master to HTML & CSS</h2>
+        <p>A beginner-friendly course that teaches the fundamentals of building websites with HTML and CSS.</p>
+    </div></a>
+    
+    <div class="product"><a href="#">
+        <img src="../assest/prouct3.png" alt="Product 2">
+        <h2>JavaScript Mastery</h2>
+        <p>Take your coding skills to the next level with this comprehensive JavaScript course covering advanced concepts and real-world projects.</p>
+    </div></a>
+    
+    <div class="product"><a href="#">
+        <img src="../assest/Product3.jpg" alt="Product 3">
+        <h2>Python for Data Science</h2>
+        <p>Unlock the power of data analysis and machine learning with Python in this hands-on course designed for aspiring data scientists.</p>
+    </div></a>
+    
+    <!-- Add more products as needed -->
+    <button class="show-all-btn">Show All</button>
+</div>
+
+</body>
+</html>

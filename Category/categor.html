@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - CodeEducation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(../assest/ING_19061_177314-1200x675.jpg);
+                background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+                background-blend-mode: multiply; /* This blends the background image with the black color */
+                background-size: cover;
+                background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Default text color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #ffffff88;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #012586; /* Theme color for headings */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .category {
+            background-color: #f9f9f95d;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category-title {
+            color: #001f74; /* Theme color for category titles */
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .category-list li {
+            margin-bottom: 10px;
+        }
+        .category-list li a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 18px;
+        }
+        .category-list li a:hover {
+            color: #3a63d6; /* Theme color for links on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Categories</h1>
+    
+    <div class="category">
+        <div class="category-title">Web Development</div>
+        <ul class="category-list">
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Node.js</a></li>
+        </ul>
+    </div>
+    
+    <div class="category">
+        <div class="category-title">Data Science</div>
+        <ul class="category-list">
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Data Visualization</a></li>
+            <li><a href="#">Big Data</a></li>
+        </ul>
+    </div>
+    
+    <div class="category">
+        <div class="category-title">Mobile Development</div>
+        <ul class="category-list">
+            <li><a href="#">Android</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">React Native</a></li>
+            <li><a href="#">Flutter</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
